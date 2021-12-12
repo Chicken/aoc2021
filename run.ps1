@@ -1,4 +1,4 @@
-$day = $Args[0]
+$day = ("" + $Args[0]).PadLeft(2, "0")
 $part = $Args[1]
 
 cd "day$day"

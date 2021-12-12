@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd day$1
+cd "day$(printf %02d $1)"
 cargo run --manifest-path="part$2/Cargo.toml"
 cd ..
